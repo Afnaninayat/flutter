@@ -10,26 +10,29 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
-          child: firstpage(),
+          child: FirstPage(),
         ),
       ),
     );
   }
 }
 
-class firstpage extends StatelessWidget {
-  const firstpage({super.key});
+class FirstPage extends StatelessWidget {
+  const FirstPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Mamas Recipies',
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
           child:  ListTile(
             leading: const CircleAvatar(
-              backgroundImage:AssetImage('assets/images/1.jpg'),),
+              backgroundImage:AssetImage('assets/images/dp.jpg'),),
            contentPadding: const EdgeInsets.all(10),
             shape: RoundedRectangleBorder(
             side:const BorderSide(color: Colors.black, width: 1),
@@ -39,7 +42,7 @@ class firstpage extends StatelessWidget {
             title: Row(
             children:[
               ElevatedButton(onPressed: (){
-                print('recipie 1');
+                print('AALU LELO');
               }, child: const Text(('recipie 1')))
             ],
             )
