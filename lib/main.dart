@@ -33,7 +33,7 @@ class firstpage extends StatelessWidget {
            contentPadding: const EdgeInsets.all(10),
             shape: RoundedRectangleBorder(
             side:const BorderSide(color: Colors.black, width: 1),
-            borderRadius: BorderRadius.circular(5),
+            borderRadius: BorderRadius.circular(10),
             
           ),
             title: Row(
